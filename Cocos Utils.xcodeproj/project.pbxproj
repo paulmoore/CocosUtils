@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D195954A16AF8E97001D51ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D195954916AF8E97001D51ED /* Foundation.framework */; };
-		D195954F16AF8E97001D51ED /* Cocos_Utils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D195954E16AF8E97001D51ED /* Cocos_Utils.h */; };
-		D195955116AF8E97001D51ED /* Cocos_Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D195955016AF8E97001D51ED /* Cocos_Utils.m */; };
+		D195955D16AF8EE9001D51ED /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = D195955816AF8EE9001D51ED /* Animation.m */; };
+		D195955E16AF8EE9001D51ED /* CCNode+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = D195955A16AF8EE9001D51ED /* CCNode+Layout.m */; };
+		D195955F16AF8EE9001D51ED /* TouchDistributor.m in Sources */ = {isa = PBXBuildFile; fileRef = D195955C16AF8EE9001D51ED /* TouchDistributor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +20,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				D195954F16AF8E97001D51ED /* Cocos_Utils.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -29,8 +29,13 @@
 		D195954616AF8E97001D51ED /* libCocos Utils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCocos Utils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D195954916AF8E97001D51ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D195954D16AF8E97001D51ED /* Cocos Utils-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cocos Utils-Prefix.pch"; sourceTree = "<group>"; };
-		D195954E16AF8E97001D51ED /* Cocos_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cocos_Utils.h; sourceTree = "<group>"; };
-		D195955016AF8E97001D51ED /* Cocos_Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cocos_Utils.m; sourceTree = "<group>"; };
+		D195955716AF8EE9001D51ED /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		D195955816AF8EE9001D51ED /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
+		D195955916AF8EE9001D51ED /* CCNode+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCNode+Layout.h"; sourceTree = "<group>"; };
+		D195955A16AF8EE9001D51ED /* CCNode+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCNode+Layout.m"; sourceTree = "<group>"; };
+		D195955B16AF8EE9001D51ED /* TouchDistributor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchDistributor.h; sourceTree = "<group>"; };
+		D195955C16AF8EE9001D51ED /* TouchDistributor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchDistributor.m; sourceTree = "<group>"; };
+		D195956016AF8F10001D51ED /* CocosUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocosUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +78,12 @@
 		D195954B16AF8E97001D51ED /* Cocos Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D195954E16AF8E97001D51ED /* Cocos_Utils.h */,
-				D195955016AF8E97001D51ED /* Cocos_Utils.m */,
+				D195955716AF8EE9001D51ED /* Animation.h */,
+				D195955816AF8EE9001D51ED /* Animation.m */,
+				D195955916AF8EE9001D51ED /* CCNode+Layout.h */,
+				D195955A16AF8EE9001D51ED /* CCNode+Layout.m */,
+				D195955B16AF8EE9001D51ED /* TouchDistributor.h */,
+				D195955C16AF8EE9001D51ED /* TouchDistributor.m */,
 				D195954C16AF8E97001D51ED /* Supporting Files */,
 			);
 			path = "Cocos Utils";
@@ -83,6 +92,7 @@
 		D195954C16AF8E97001D51ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D195956016AF8F10001D51ED /* CocosUtils.h */,
 				D195954D16AF8E97001D51ED /* Cocos Utils-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -139,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D195955116AF8E97001D51ED /* Cocos_Utils.m in Sources */,
+				D195955D16AF8EE9001D51ED /* Animation.m in Sources */,
+				D195955E16AF8EE9001D51ED /* CCNode+Layout.m in Sources */,
+				D195955F16AF8EE9001D51ED /* TouchDistributor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
